@@ -1,0 +1,47 @@
+.checkout-section {
+  padding: 40px 0;
+}
+.form-box {
+  background-color: #f8e9dc;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+.form-box h4 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.order-summary {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e3d7ce;
+}
+.order-summary h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.confirm-btn {
+  background-color: #dcb3a1;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  width: 100%;
+}
+.confirm-btn:hover {
+  background-color: #c29a8b;
+}
+.form-label {
+  font-weight: 500;
+}
+.custom-check {
+  font-size: 0.9rem;
+  color: #555;
+}
+.product-table th,
+.product-table td {
+  padding: 8px 0;
+}
+.product-table td:last-child {
+  text-align: right;
+}
