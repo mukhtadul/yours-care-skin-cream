@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yours Care Skin Cream</title>
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <!-- bootstrap 5.1 css link  -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="mini_header">
+        <p class="mini_header_text">20% OFF ON ORGANIC PRODUCTS</p>
+      </div>
+
+      <div class="main_header">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <!-- Left: Logo -->
+            <div class="col-4 col-md-3 col-lg-2">
+              <a href="index.html" class="d-inline-block logo_wrapper">
+                <img
+                  src="./assets/images/logo.png"
+                  alt="Logo"
+                  class="img-fluid logo"
+                />
+              </a>
+            </div>
+
+            <!-- Center: Navigation Menu (desktop only) -->
+            <div class="d-none d-lg-block col-md-8 text-center">
+              <ul class="nav justify-content-center custom_nav">
+                <li class="nav-item custom_nav_items">
+                  <a class="nav-link nav_links_header" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item custom_nav_items">
+                  <a class="nav-link nav_links_header" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item custom_nav_items">
+                  <a class="nav-link nav_links_header" href="about.html"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item custom_nav_items">
+                  <a class="nav-link nav_links_header" href="contact.html"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Right: Icons + Toggle Button -->
+            <div
+              class="col-8 col-md-6 col-lg-2 text-end d-flex justify-content-end align-items-center"
+            >
+              <a href="wishlist.html" class="header_icons_wrapper">
+                <img
+                  src="./assets/images/icons/Heart.png"
+                  alt="Wishlist"
+                  class="header_icon"
+                />
+
+                <div class="count_item">0</div>
+              </a>
+              <a href="cart.html" class="header_icons_wrapper">
+                <img
+                  src="./assets/images/icons/Shopping cart.png"
+                  alt="Cart"
+                  class="header_icon"
+                />
+                <div class="count_item cart_count_item">0</div>
+              </a>
+              <a href="#" class="header_icons_wrapper">
+                <img
+                  src="./assets/images/icons/User.png"
+                  alt="User"
+                  class="header_icon"
+                />
+              </a>
+
+              <!-- Hamburger Toggle for Mobile -->
+              <button
+                class="hamberger_btn d-lg-none"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
+                <span><i class="fa-solid fa-bars"></i></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu (collapsible) -->
+        </div>
+      </div>
+    </header>
+    <!-- header end  -->
+
+    <section class="breadcrumb_section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <div class="breadcrum">
+              <h2 class="h2_headings">Thank You</h2>
+
+              <ul class="breadcrum_ul">
+                <li class="breadcrum_li">
+                  <a href="index.html" class="hero_para">Home</a> /
+                </li>
+                <li class="breadcrum_li">
+                  <a href="#" class="hero_para">Thank You</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- breadcrum end  -->
+
+    <section class="thankyou_section space_padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="thankyou_container">
+              <div class="thankyou_info">
+                <img src="./assets/images/icons/thanyou.svg" alt="" />
+
+                <h2 class="h2_headings">Thank You For the order !</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="details_of_order">
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-md-12">
+            <div class="h2_headings mb-5">Your Oder Details Here:</div>
+            <div class="d-flex gap-3 align-items-start">
+              <ul id="shippingInfo" class="details-list"></ul>
+              <ul id="billingInfo" class="details-list"></ul>
+              <div style="width: 50%" class="custom_thankyou">
+                <table class="table product-table custom_thankyou_table w-100">
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>Subtotal</th>
+                    </tr>
+                  </thead>
+                  <tbody id="orderSummaryTable"></tbody>
+                </table>
+
+                <h5>Total: <span id="orderTotal">$0.00</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="space_padding">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6 col-lg-4">
+            <div class="footer_info_wrap">
+              <img src="./assets/images/logo.png" alt="" />
+
+              <p class="hero_para">
+                YoursCare offers natural, chemical-free skincare to nourish and
+                protect. Our creams are crafted with clean ingredients for a
+                healthy, glowing skin.
+              </p>
+
+              <img src="./assets/images/payment-icon.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="footer_info_wrap">
+              <h4 class="h4_headings">Quick Links</h4>
+
+              <ul class="footer_ul">
+                <li><a href="index.html" class="footer_links">Home</a></li>
+                <li><a href="shop.html" class="footer_links">Shop</a></li>
+                <li><a href="cart.html" class="footer_links">Cart</a></li>
+                <li>
+                  <a href="wishlist.html" class="footer_links">Wishlist</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="footer_info_wrap">
+              <h4 class="h4_headings">Information</h4>
+
+              <ul class="footer_ul">
+                <li><a href="about.html" class="footer_links">About Us</a></li>
+                <li>
+                  <a href="contact.html" class="footer_links">Contact Us</a>
+                </li>
+                <li>
+                  <a href="checkout.html" class="footer_links">Check Out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="footer_info_wrap">
+              <h4 class="h4_headings">Get In Touch</h4>
+
+              <ul class="footer_ul">
+                <li>
+                  <a href="mailto:mukhtadul.mi@gmail.com" class="footer_links"
+                    ><span class="footer_icons"
+                      ><i class="fa-solid fa-envelope"></i></span
+                    >mukhtadul.mi@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+91 8617070358" class="footer_links"
+                    ><span class="footer_icons"
+                      ><i class="fa-solid fa-square-phone"></i></span
+                    >+91 8617070358</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer_links"
+                    ><span class="footer_icons"
+                      ><i class="fa-solid fa-location-dot"></i></span
+                    >Kolkata, India.</a
+                  >
+                </li>
+                <li class="footer_social">
+                  <a href="#"
+                    ><img src="./assets/images/icons/Facebook.svg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/images/icons/Instagram.svg" alt=""
+                  /></a>
+                  <a href="#"
+                    ><img src="./assets/images/icons/Twitter.svg" alt=""
+                  /></a>
+
+                  <a href="#"
+                    ><img src="./assets/images/icons/Social.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_copyright">
+        <p class="hero_para">© 2025 Yourscare. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- footer end  -->
+
+    <!-- off Canvas menu Start -->
+    <div
+      class="offcanvas offcanvas-end off_container"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </h5>
+        <button
+          type="button"
+          class="btn-close close_btn"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas_content_wrapper">
+          <ul class="offcanvas_ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Our Store</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Off Canvas Menu End -->
+    <!-- jquery link  -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <!-- bootstrap 5.1 js link  -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- main js file -->
+    <script src="./assets/js/all-products.js"></script>
+    <script src="./assets/js/thankyou.js"></script>
+  </body>
+</html>
